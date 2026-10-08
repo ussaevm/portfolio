@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магтым Уссаев — DevOps Engineer / SRE</title>
+    <meta name="description" content="Магтым Уссаев — DevOps Engineer. 10+ лет в IT, 6 лет в DevOps: AWS, Kubernetes, GitOps, CI/CD и DevSecOps.">
+    <meta name="author" content="Магтым Уссаев">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ussaevm.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://ussaevm.github.io/">
+    <meta property="og:site_name" content="Магтым Уссаев — DevOps/SRE">
+    <meta property="og:title" content="Магтым Уссаев — DevOps/SRE">
+    <meta property="og:description" content="10+ лет в IT, 6 лет в DevOps: AWS, Kubernetes, GitOps, CI/CD и DevSecOps. Открыт к удалённым проектам.">
+    <meta property="og:image" content="https://ussaevm.github.io/icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="profile:first_name" content="Magtym">
+    <meta property="profile:last_name" content="Ussayev">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Магтым Уссаев — DevOps/SRE">
+    <meta name="twitter:description" content="10+ лет в IT, 6 лет в DevOps. AWS, Kubernetes, GitOps, CI/CD и DevSecOps.">
+    <meta name="twitter:image" content="https://ussaevm.github.io/icon-512.png">
+
+    <!-- Theme / PWA -->
+    <meta name="theme-color" content="#050508">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23050508'/%3E%3Ctext x='50' y='68' font-size='56' font-family='monospace' font-weight='700' fill='%2300d4ff' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Structured data (schema.org Person — there is no official "Resume" type, Person is the correct/recommended type for this use case) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Magtym Ussayev",
+      "alternateName": "Магтым Уссаев",
+      "@id": "https://ussaevm.github.io/#person",
+      "url": "https://ussaevm.github.io/",
+      "jobTitle": "DevOps Engineer",
+      "description": "DevOps Engineer with 10+ years in IT and 6 years in DevOps, specializing in AWS, Kubernetes, GitOps, CI/CD, and DevSecOps.",
+      "email": "mailto:ussaev6@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ashgabat",
+        "addressCountry": "TM"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/ussaev",
+        "https://github.com/ussaevm",
+        "https://t.me/topdev17"
+      ],
+      "knowsAbout": [
+        "DevOps", "SRE", "Kubernetes", "Docker", "Helm", "Karpenter", "ArgoCD", "GitOps",
+        "AWS", "Terraform", "Ansible", "Prometheus", "Grafana", "HashiCorp Vault", "PostgreSQL", "Go", "Linux"
+      ],
+      "knowsLanguage": [
+        { "@type": "Language", "name": "Russian", "alternateName": "ru" },
+        { "@type": "Language", "name": "English", "alternateName": "en" }
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Videfy"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Tver State Technical University" }
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "DevOps/SRE",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Ashgabat"
+        },
+        "skills": "AWS, Kubernetes, Docker, Helm, Karpenter, ArgoCD, GitOps, GitLab CI/CD, GitHub Actions, Terraform, Ansible, Vault, Prometheus, Grafana, PostgreSQL, Redis, MongoDB, Go, Python, Bash"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://ussaevm.github.io/",
+      "dateModified": "2026-10-08",
+      "mainEntity": { "@id": "https://ussaevm.github.io/#person" }
+    }
+    </script>
+    <style>
+        :root {
+            --bg-primary: #050508;
+            --bg-secondary: #0a0a12;
+            --bg-card: #0f0f1a;
+            --bg-card-hover: #151525;
+            --accent-cyan: #00d4ff;
+            --accent-purple: #7c3aed;
+            --accent-pink: #ec4899;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --text-muted: #606070;
+            --border: rgba(0, 212, 255, 0.1);
+            --glow-cyan: rgba(0, 212, 255, 0.3);
+            --glow-purple: rgba(124, 58, 237, 0.3);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        #particles-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0; pointer-events: none;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 3px; }
+        .scroll-progress {
+            position: fixed; top: 0; left: 0; height: 2px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+            z-index: 10000; width: 0%; transition: width 0.1s;
+        }
+        header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(5,5,8,0.8); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border); transition: all 0.3s ease;
+        }
+        header.scrolled { padding: 0.6rem 2rem; background: rgba(5,5,8,0.95); }
+        .logo {
+            font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; font-weight: 600;
+            color: var(--accent-cyan); text-shadow: 0 0 20px var(--glow-cyan);
+            text-decoration: none; cursor: pointer;
+        }
+        .logo span { color: var(--text-primary); }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a {
+            color: var(--text-secondary); text-decoration: none; font-size: 0.85rem;
+            font-weight: 500; transition: all 0.3s ease; position: relative;
+        }
+        nav a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+            background: var(--accent-cyan); transition: width 0.3s ease;
+            box-shadow: 0 0 10px var(--glow-cyan);
+        }
+        nav a:hover { color: var(--accent-cyan); }
+        nav a:hover::after { width: 100%; }
+        .lang-switch { display: flex; gap: 0.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; }
+        .lang-switch button {
+            background: none; border: 1px solid var(--border); color: var(--text-muted);
+            padding: 0.3rem 0.7rem; border-radius: 4px; cursor: pointer;
+            transition: all 0.3s ease; font-family: inherit;
+        }
+        .lang-switch button.active { border-color: var(--accent-cyan); color: var(--accent-cyan); box-shadow: 0 0 10px var(--glow-cyan); }
+        .lang-switch button:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+        .nav-toggle {
+            display: none; background: none; border: 1px solid var(--border); border-radius: 4px;
+            color: var(--accent-cyan); font: inherit; padding: 0.3rem 0.65rem; cursor: pointer;
+        }
+        .hero {
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            position: relative; padding: 6rem 2rem 4rem; z-index: 1;
+        }
+        .hero-content {
+            display: flex; flex-direction: column; align-items: center; gap: 2.2rem;
+            max-width: 760px; width: 100%;
+        }
+        /* Selected achievements use the existing operations-dashboard visual style. */
+        .ops-panel {
+            width: 100%; background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px; overflow: hidden; box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 0 40px rgba(0,212,255,0.06);
+        }
+        .ops-header {
+            display: flex; align-items: center; gap: 0.6rem; padding: 0.8rem 1.2rem;
+            border-bottom: 1px solid var(--border); font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem; color: var(--text-secondary); letter-spacing: 0.06em;
+        }
+        .ops-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green); }
+        .ops-metrics { display: grid; grid-template-columns: repeat(4, 1fr); }
+        .ops-metric { padding: 1.1rem 0.6rem; text-align: center; border-right: 1px solid var(--border); }
+        .ops-metric:last-child { border-right: none; }
+        .ops-value { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; font-weight: 700; color: var(--accent-cyan); }
+        .ops-label { font-size: 0.65rem; color: var(--text-muted); margin-top: 0.25rem; }
+        .spark { display: flex; gap: 2px; justify-content: center; align-items: flex-end; height: 16px; margin-top: 0.5rem; }
+        .spark span { width: 3px; border-radius: 1px; background: var(--accent-cyan); opacity: 0.55; animation: sparkPulse 2.2s ease-in-out infinite; transform-origin: bottom; }
+        .spark span:nth-child(1){height:35%;animation-delay:0s;}
+        .spark span:nth-child(2){height:65%;animation-delay:.15s;}
+        .spark span:nth-child(3){height:45%;animation-delay:.3s;}
+        .spark span:nth-child(4){height:80%;animation-delay:.45s;}
+        .spark span:nth-child(5){height:55%;animation-delay:.6s;}
+        .spark span:nth-child(6){height:70%;animation-delay:.75s;}
+        @keyframes sparkPulse { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(1.5); } }
+        .ops-ticker { border-top: 1px solid var(--border); overflow: hidden; white-space: nowrap; padding: 0.6rem 0; }
+        .ops-ticker-track { display: flex; width: max-content; animation: tickerScroll 24s linear infinite; }
+        .ops-ticker-set { display: flex; gap: 2.2rem; flex-shrink: 0; padding-right: 2.2rem; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-secondary); }
+        @keyframes tickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        @media (prefers-reduced-motion: reduce) {
+            .ops-ticker-track, .spark span, .ops-dot { animation: none; }
+        }
+        .status-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;
+            background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3);
+            padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.8rem; font-weight: 500;
+            color: var(--accent-green); animation: pulse 2s infinite;
+        }
+        .status-dot { width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 10px var(--accent-green); }
+        @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); } 50% { box-shadow: 0 0 0 8px rgba(16,185,129,0); } }
+        .status-alert { font-weight: 800; animation: alertBlink 1s steps(2, jump-none) infinite; padding: 0 2px; border-radius: 4px; }
+        @keyframes alertBlink {
+            0%, 49% { color: #ff3b3b; text-shadow: 0 0 8px rgba(255,59,59,0.85); }
+            50%, 100% { color: #ffffff; text-shadow: 0 0 8px rgba(255,255,255,0.85); }
+        }
+        @media (prefers-reduced-motion: reduce) { .status-alert { animation: none; color: #ff3b3b; } }
+        #cursor-glow {
+            position: fixed; top: 0; left: 0; width: 420px; height: 420px;
+            margin-left: -210px; margin-top: -210px;
+            border-radius: 50%; pointer-events: none; z-index: 2;
+            background: radial-gradient(circle, rgba(0,212,255,0.10), rgba(124,58,237,0.05) 45%, transparent 70%);
+            filter: blur(18px); mix-blend-mode: screen; will-change: transform;
+        }
+        @media (pointer: coarse) { #cursor-glow { display: none; } }
+        /* Spotlight: soft cursor-following highlight on glass cards */
+        .spotlight { position: relative; }
+        .spotlight::after {
+            content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+            background: radial-gradient(circle at var(--sx,50%) var(--sy,50%), rgba(0,212,255,0.14), transparent 55%);
+            opacity: 0; transition: opacity 0.35s ease; z-index: -1;
+        }
+        .spotlight:hover::after { opacity: 1; }
+        @media (pointer: coarse) { .spotlight::after { display: none; } }
+
+
+        .hero-specs { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; margin-top: 0.6rem; }
+        .hero-spec-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.22rem 0.6rem; border: 1px solid var(--border); border-radius: 20px; color: var(--text-secondary); white-space: nowrap; }
+        .hero-name {
+            font-size: 2.5rem; font-weight: 800; text-align: center;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-cyan));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .hero-title {
+            font-size: 1.9rem; font-weight: 800; text-align: center; text-transform: uppercase;
+            letter-spacing: 0.12em; font-family: 'JetBrains Mono', monospace;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink), var(--accent-orange), var(--accent-cyan));
+            background-size: 300% 100%;
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+            animation: titleGradient 5s linear infinite;
+            filter: drop-shadow(0 0 18px rgba(0,212,255,0.35));
+        }
+        @keyframes titleGradient {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .hero-title { animation: none; background-position: 0% 50%; }
+        }
+        @media (max-width: 640px) {
+            .hero-title { font-size: 1.3rem; letter-spacing: 0.06em; }
+        }
+        .hero-location { color: var(--text-secondary); font-size: clamp(0.66rem, 3.15vw, 0.9rem); text-align: center; white-space: nowrap; }
+        .hero-city { color: var(--text-muted); font-size: 0.8rem; text-align: center; margin-top: 0.2rem; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.03em; }
+        .hero-cta { margin-top: 1rem; }
+        .stats {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+            max-width: 900px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1;
+        }
+        .stat-card {
+            background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09); border-radius: 16px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 8px 32px rgba(0,0,0,0.3);
+            padding: 1.5rem; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden;
+        }
+        .stat-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+            transform: scaleX(0); transition: transform 0.4s ease;
+        }
+        .stat-card:hover::before { transform: scaleX(1); }
+        .stat-card:hover { transform: translateY(-5px); border-color: var(--accent-cyan); box-shadow: 0 10px 40px rgba(0,212,255,0.1); }
+        .achievement-icon {
+            font-size: 1.5rem; margin-bottom: 0.5rem; opacity: 0.85;
+            filter: drop-shadow(0 0 8px rgba(0,212,255,0.35));
+            transition: transform 0.4s ease;
+        }
+        .achievement:hover .achievement-icon { transform: scale(1.15) rotate(-4deg); }
+        .achievement { overflow: hidden; }
+        .achievement::after {
+            content: ''; position: absolute; top: 0; left: -150%; width: 60%; height: 100%;
+            background: linear-gradient(115deg, transparent, rgba(255,255,255,0.12), transparent);
+            transform: skewX(-20deg); transition: left 0.7s ease; pointer-events: none; z-index: 1;
+        }
+        .achievement:hover::after { left: 150%; }
+        .stat-number { font-size: 2.5rem; font-weight: 800; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-family: 'JetBrains Mono', monospace; }
+        .stat-number-row { display: flex; align-items: baseline; justify-content: center; gap: 0.05em; }
+        .stat-gt { font-size: 2.5rem; font-weight: 800; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; }
+        .stat-label { color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.3rem; }
+        section { position: relative; z-index: 1; padding: 6rem 2rem; scroll-margin-top: 80px; }
+        .section-title { font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 3rem; position: relative; display: inline-block; left: 50%; transform: translateX(-50%); }
+        .section-title::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple)); border-radius: 2px; }
+        .section-subtitle { text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 0.9rem; }
+        .contact-email-line { display: block; text-align: center; margin-top: -2rem; margin-bottom: 0.8rem; font-family: 'JetBrains Mono', monospace; font-size: 1rem; color: var(--accent-cyan); text-decoration: none; }
+        .about { max-width: 900px; margin: 0 auto; }
+        .about-text {
+            background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09); border-radius: 16px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 8px 32px rgba(0,0,0,0.3);
+            padding: 2rem; font-size: 1rem; line-height: 1.8; color: var(--text-secondary); position: relative;
+        }
+        .about-text p { text-align: justify; text-indent: 2ch; }
+        .about-text::before { content: '"'; position: absolute; top: -10px; left: 20px; font-size: 4rem; color: var(--accent-cyan); opacity: 0.3; font-family: serif; }
+        .about-text::after { content: '"'; position: absolute; bottom: -6px; right: 20px; font-size: 4rem; color: var(--accent-cyan); opacity: 0.3; font-family: serif; }
+        .pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .pillar {
+            background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(0,212,255,0.02));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09); border-radius: 18px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 8px 32px rgba(0,0,0,0.3);
+            padding: 2rem 1.5rem; transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+            position: relative; overflow: hidden;
+            text-align: center; display: flex; flex-direction: column; align-items: center;
+        }
+        .pillar::before {
+            content: ''; position: absolute; top: -40%; left: 50%; width: 140%; height: 140%;
+            transform: translateX(-50%); background: radial-gradient(circle, rgba(0,212,255,0.10), transparent 60%);
+            opacity: 0; transition: opacity 0.5s ease; pointer-events: none;
+        }
+        .pillar:hover::before { opacity: 1; }
+        .pillar:hover { transform: translateY(-8px); border-color: var(--accent-cyan); box-shadow: 0 16px 40px -12px rgba(0,212,255,0.25); }
+        .pillar-icon-badge {
+            width: 3.4rem; height: 3.4rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(124,58,237,0.15));
+            border: 1px solid var(--border); margin-bottom: 1rem; position: relative; z-index: 1;
+            animation: pillarFloat 3.5s ease-in-out infinite;
+        }
+        .pillar:nth-child(2) .pillar-icon-badge { animation-delay: 0.3s; }
+        .pillar:nth-child(3) .pillar-icon-badge { animation-delay: 0.6s; }
+        .pillar:nth-child(4) .pillar-icon-badge { animation-delay: 0.9s; }
+        .pillar:hover .pillar-icon-badge { transform: scale(1.12) rotate(-6deg); border-color: var(--accent-cyan); }
+        @keyframes pillarFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+        .pillar-icon { font-size: 1.5rem; }
+        .pillar-title { font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem; font-size: 1.05rem; letter-spacing: 0.02em; position: relative; z-index: 1; }
+        .pillar-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; position: relative; z-index: 1; }
+        @media (prefers-reduced-motion: reduce) {
+            .pillar-icon-badge { animation: none; }
+        }
+        .timeline { max-width: 900px; margin: 0 auto; position: relative; }
+        .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 2px; height: 100%; background: linear-gradient(180deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink)); opacity: 0.3; }
+        .timeline-item { display: flex; margin-bottom: 2rem; position: relative; opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .timeline-item.visible { opacity: 1; transform: translateY(0); }
+        .timeline-item:nth-child(odd) { flex-direction: row-reverse; text-align: right; }
+        .timeline-item:nth-child(odd) .timeline-content { margin-right: 3rem; margin-left: 0; }
+        .timeline-item:nth-child(even) .timeline-content { margin-left: 3rem; }
+        .timeline-dot { position: absolute; left: 50%; transform: translateX(-50%); width: 16px; height: 16px; background: var(--bg-primary); border: 3px solid var(--accent-cyan); border-radius: 50%; z-index: 2; box-shadow: 0 0 15px var(--glow-cyan); transition: all 0.3s ease; }
+        .timeline-item:hover .timeline-dot { background: var(--accent-cyan); box-shadow: 0 0 25px var(--accent-cyan); }
+        .timeline-content {
+            width: calc(50% - 3rem);
+            background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09); border-radius: 12px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 8px 32px rgba(0,0,0,0.3);
+            padding: 1.5rem; cursor: pointer; transition: all 0.4s ease; position: relative; text-align: center; overflow-wrap: break-word;
+        }
+        .timeline-content:hover { border-color: var(--accent-cyan); box-shadow: 0 5px 30px rgba(0,212,255,0.1); transform: scale(1.02); }
+        .timeline-details { text-align: left; }
+        .timeline-date { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 0.5rem; }
+        .timeline-role { font-weight: 700; font-size: 1rem; color: var(--text-primary); margin-bottom: 0.2rem; }
+        .timeline-company { font-size: 0.85rem; color: var(--accent-purple); margin-bottom: 0.5rem; }
+        .timeline-details { max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.5s ease; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; }
+        .timeline-details.expanded { max-height: 500px; padding-top: 1rem; }
+        .timeline-details ul { list-style: none; padding: 0; }
+        .timeline-details li { padding-left: 1.2rem; position: relative; margin-bottom: 0.3rem; }
+        .timeline-details li::before { content: '▸'; position: absolute; left: 0; color: var(--accent-cyan); }
+        .timeline-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+        .timeline-tag { font-size: 0.7rem; padding: 0.2rem 0.6rem; background: rgba(0,212,255,0.1); border: 1px solid rgba(0,212,255,0.2); border-radius: 4px; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; }
+        .expand-hint { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .skill-category {
+            background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09); border-radius: 16px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 8px 32px rgba(0,0,0,0.3);
+            padding: 1.5rem; transition: all 0.4s ease; text-align: center;
+        }
+        .skill-category:hover { border-color: var(--accent-cyan); box-shadow: 0 5px 30px rgba(0,212,255,0.08); }
+        .skill-category-title { font-weight: 700; font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+        .skill-category-title .icon { font-size: 1.2rem; }
+        .skill-items { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+        .skill-item {
+            padding: 0.4rem 0.8rem; background: rgba(0,212,255,0.05); border: 1px solid rgba(0,212,255,0.1);
+            border-radius: 6px; font-size: 0.8rem; color: var(--text-secondary); transition: all 0.3s ease;
+            font-family: 'JetBrains Mono', monospace; cursor: default; position: relative;
+        }
+        .skill-item:hover { background: rgba(0,212,255,0.15); border-color: var(--accent-cyan); color: var(--accent-cyan); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,212,255,0.15); }
+        /* hover tooltip "cloud" with a short explanation */
+        .skill-item::after {
+            content: attr(data-tip-ru);
+            position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%) translateY(4px);
+            background: var(--bg-secondary); border: 1px solid var(--accent-cyan); color: var(--text-primary);
+            font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.72rem; line-height: 1.35;
+            white-space: normal; width: max-content; max-width: 220px; text-align: center;
+            padding: 0.5rem 0.7rem; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 0 14px rgba(0,212,255,0.15);
+            opacity: 0; visibility: hidden; pointer-events: none; z-index: 20;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        html[lang="en"] .skill-item::after { content: attr(data-tip-en); }
+        .skill-item::before {
+            content: ''; position: absolute; bottom: calc(100% + 5px); left: 50%; transform: translateX(-50%);
+            border: 5px solid transparent; border-top-color: var(--accent-cyan);
+            opacity: 0; visibility: hidden; transition: opacity 0.2s ease; z-index: 20; pointer-events: none;
+        }
+        .skill-item:hover::after, .skill-item:hover::before { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+        @media (max-width: 640px) {
+            .skill-item::after, .skill-item::before { display: none; }
+        }
+        .contacts { text-align: center; max-width: 600px; margin: 0 auto; }
+        .contact-tagline { white-space: nowrap; }
+        @media (max-width: 560px) { .contact-tagline { font-size: 0.82rem; } }
+        .contact-buttons { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap; }
+        .contact-btn {
+            display: inline-flex; align-items: center; gap: 0.7rem; padding: 1rem 2rem;
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+            color: var(--text-primary); text-decoration: none; font-weight: 600; font-size: 1rem;
+            transition: all 0.4s ease; position: relative; overflow: hidden;
+        }
+        .contact-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent); transition: left 0.6s ease; }
+        .contact-btn:hover::before { left: 100%; }
+        .contact-btn:hover { border-color: var(--accent-cyan); box-shadow: 0 0 30px rgba(0,212,255,0.2); transform: translateY(-3px); }
+        .contact-btn.resume {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple) 55%, var(--accent-pink));
+            background-size: 200% 200%; color: #050508; border: none; border-radius: 50px;
+            font-weight: 700; padding: 1.05rem 2.4rem; letter-spacing: 0.01em;
+            box-shadow: 0 10px 34px -10px rgba(0,212,255,0.5);
+            animation: resumeGlow 4s ease-in-out infinite, resumeGradient 6s ease infinite;
+        }
+        .contact-btn.resume:hover {
+            transform: translateY(-4px) scale(1.035);
+            box-shadow: 0 16px 44px -8px rgba(124,58,237,0.55);
+            border-color: transparent;
+        }
+        .contact-btn.resume .contact-icon { display: inline-block; animation: resumeBounce 1.8s ease-in-out infinite; }
+        @keyframes resumeGlow {
+            0%, 100% { box-shadow: 0 10px 34px -10px rgba(0,212,255,0.5); }
+            50% { box-shadow: 0 10px 40px -6px rgba(236,72,153,0.55); }
+        }
+        @keyframes resumeGradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        @keyframes resumeBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3px); } }
+        @media (prefers-reduced-motion: reduce) {
+            .contact-btn.resume, .contact-btn.resume .contact-icon { animation: none; }
+        }
+        .contact-icon { font-size: 1.3rem; }
+        .social-icons { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1.6rem; margin-bottom: 2.2rem; }
+        .social-icon {
+            color: var(--text-secondary); display: inline-flex; align-items: center; justify-content: center;
+            width: 52px; height: 52px; border-radius: 16px;
+            background: linear-gradient(160deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+            backdrop-filter: blur(14px) saturate(160%); -webkit-backdrop-filter: blur(14px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 6px 20px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .social-icon svg { width: 24px; height: 24px; }
+        .social-icon:hover { transform: translateY(-4px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 10px 28px rgba(0,212,255,0.18); }
+        .social-icon.linkedin-icon:hover { color: #0A66C2; border-color: rgba(10,102,194,0.4); }
+        .social-icon.telegram-icon:hover { color: #229ED9; border-color: rgba(34,158,217,0.4); }
+        .social-icon.email-icon { color: #ffffff; font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 700; line-height: 1; }
+        .social-icon.email-icon:hover { border-color: rgba(236,72,153,0.4); color: var(--accent-pink); }
+        /* hover tooltip "cloud" for social icons, same pattern as skill tags */
+        .social-icon { position: relative; }
+        .social-icon::after {
+            content: attr(data-tip-ru);
+            position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%) translateY(4px);
+            background: var(--bg-secondary); border: 1px solid var(--accent-cyan); color: var(--text-primary);
+            font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.72rem; line-height: 1.35;
+            white-space: nowrap; width: max-content; max-width: 220px; text-align: center;
+            padding: 0.5rem 0.7rem; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.4), 0 0 14px rgba(0,212,255,0.15);
+            opacity: 0; visibility: hidden; pointer-events: none; z-index: 20;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        html[lang="en"] .social-icon::after { content: attr(data-tip-en); }
+        .social-icon::before {
+            content: ''; position: absolute; bottom: calc(100% + 7px); left: 50%; transform: translateX(-50%);
+            border: 5px solid transparent; border-top-color: var(--accent-cyan);
+            opacity: 0; visibility: hidden; transition: opacity 0.2s ease; z-index: 20; pointer-events: none;
+        }
+        .social-icon:hover::after, .social-icon:hover::before { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+        @media (max-width: 640px) {
+            .social-icon::after, .social-icon::before { display: none; }
+        }
+        footer { text-align: center; padding: 3rem 2rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.8rem; position: relative; z-index: 1; }
+        .footer-status { font-family: 'JetBrains Mono', monospace; display: inline-flex; align-items: center; gap: 0.5rem; letter-spacing: 0.02em; flex-wrap: wrap; justify-content: center; max-width: 90vw; }
+        .footer-tags { font-size: 0.72rem; }
+        .footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green); animation: pulse2 2s infinite; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .glow-orb { position: fixed; border-radius: 50%; filter: blur(90px); opacity: 0.18; pointer-events: none; z-index: 0; }
+        .glow-orb-1 { width: 480px; height: 480px; background: radial-gradient(circle, var(--accent-cyan), transparent 70%); top: 5%; left: -12%; animation: aurora1 16s ease-in-out infinite; }
+        .glow-orb-2 { width: 420px; height: 420px; background: radial-gradient(circle, var(--accent-purple), transparent 70%); top: 45%; right: -8%; animation: aurora2 20s ease-in-out infinite; }
+        .glow-orb-3 { width: 360px; height: 360px; background: radial-gradient(circle, var(--accent-pink), transparent 70%); bottom: 8%; left: 25%; animation: aurora3 18s ease-in-out infinite; }
+        .glow-orb-4 { width: 400px; height: 400px; background: radial-gradient(circle, var(--accent-green), transparent 70%); top: 25%; left: 45%; animation: aurora4 22s ease-in-out infinite; opacity: 0.12; }
+        @keyframes aurora1 {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            25% { transform: translate(60px,-40px) scale(1.1); }
+            50% { transform: translate(20px,50px) scale(0.95); }
+            75% { transform: translate(-40px,-20px) scale(1.05); }
+        }
+        @keyframes aurora2 {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            30% { transform: translate(-50px,40px) scale(1.08); }
+            60% { transform: translate(30px,-30px) scale(0.92); }
+        }
+        @keyframes aurora3 {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            40% { transform: translate(50px,30px) scale(1.12); }
+            70% { transform: translate(-30px,-40px) scale(0.9); }
+        }
+        @keyframes aurora4 {
+            0%, 100% { transform: translate(0,0) scale(1); opacity: 0.12; }
+            50% { transform: translate(-60px,60px) scale(1.15); opacity: 0.2; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .glow-orb { animation: none !important; }
+        }
+        @media (max-width: 900px) {
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .pillars { grid-template-columns: 1fr; }
+            .timeline::before { left: 20px; }
+            .timeline-item, .timeline-item:nth-child(odd) { flex-direction: column; text-align: left; padding-left: 50px; }
+            .timeline-item:nth-child(odd) .timeline-content, .timeline-item:nth-child(even) .timeline-content { margin: 0; width: 100%; }
+            .timeline-dot { left: 20px; }
+            .nav-toggle { display: block; }
+            nav {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; align-items: stretch; gap: 0;
+                padding: 0.5rem 2rem 1rem; background: rgba(5,5,8,0.97);
+                border-bottom: 1px solid var(--border);
+            }
+            nav.open { display: flex; }
+            nav a { padding: 0.7rem 0; }
+            nav a::after { display: none; }
+            .contact-buttons { flex-direction: column; align-items: center; }
+            .ops-metrics { grid-template-columns: repeat(2, 1fr); }
+            .ops-metric:nth-child(2) { border-right: none; }
+        }
+        @media (max-width: 600px) {
+            header, header.scrolled { padding-left: 1rem; padding-right: 1rem; }
+            nav { padding-left: 1rem; padding-right: 1rem; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .hero-name { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Glow Orbs -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="glow-orb glow-orb-4"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#top" class="logo" aria-label="Home / Главная">magtym@devops<span>~</span></a>
+        <nav id="primary-navigation">
+            <a href="#top" data-ru="Главная" data-en="Home">Главная</a>
+            <a href="#about" data-ru="Обо мне" data-en="About">Обо мне</a>
+            <a href="#experience" data-ru="Опыт" data-en="Experience">Опыт</a>
+            <a href="#skills" data-ru="Навыки" data-en="Skills">Навыки</a>
+            <a href="#contact" data-ru="Контакты" data-en="Contact">Контакты</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" data-ru="Меню" data-en="Menu">Меню</button>
+        <div class="lang-switch">
+            <button class="active" onclick="setLang('ru', this)">RU</button>
+            <button onclick="setLang('en', this)">EN</button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span data-ru="НА СВЯЗИ · " data-en="ONLINE · ">НА СВЯЗИ · </span><span class="status-alert">#OPENTOWORK</span>
+            </div>
+            <h1 class="hero-name" data-ru="Магтым Уссаев" data-en="Magtym Ussayev">Магтым Уссаев</h1>
+            <p class="hero-title">DevOps Engineer · SRE</p>
+            <p class="hero-location" data-ru="Открыт для новых проектов." data-en="Open to new projects.">Открыт для новых проектов.</p>
+
+            <div class="hero-specs" aria-label="Специализации">
+                <span class="hero-spec-tag">DevOps</span>
+                <span class="hero-spec-tag">DevSecOps</span>
+                <span class="hero-spec-tag">SRE</span>
+            </div>
+
+            <!-- Selected achievements in the existing operations-dashboard visual style -->
+            <div class="ops-panel spotlight">
+                <div class="ops-header">
+                    <span class="ops-dot"></span>
+                    <span data-ru="ВЫБРАННЫЕ РЕЗУЛЬТАТЫ // CAREER IMPACT" data-en="SELECTED RESULTS // CAREER IMPACT">ВЫБРАННЫЕ РЕЗУЛЬТАТЫ // CAREER IMPACT</span>
+                </div>
+                <div class="ops-metrics">
+                    <div class="ops-metric">
+                        <div class="ops-value">99.9%</div>
+                        <div class="ops-label" data-ru="доступность production" data-en="production uptime">доступность production</div>
+                    </div>
+                    <div class="ops-metric">
+                        <div class="ops-value">~30%</div>
+                        <div class="ops-label" data-ru="снижение AWS-расходов" data-en="AWS cost reduction">снижение AWS-расходов</div>
+                    </div>
+                    <div class="ops-metric">
+                        <div class="ops-value">20×</div>
+                        <div class="ops-label" data-ru="меньше Docker-образы" data-en="smaller Docker images">меньше Docker-образы</div>
+                    </div>
+                    <div class="ops-metric">
+                        <div class="ops-value">3</div>
+                        <div class="ops-label" data-ru="окружения мигрированы на EKS" data-en="environments migrated to EKS">окружения мигрированы на EKS</div>
+                    </div>
+                </div>
+                <div class="ops-ticker">
+                    <div class="ops-ticker-track">
+                        <div class="ops-ticker-set">
+                            <span data-ru="▸ Go-образы: 300 MB → 15 MB" data-en="▸ Go images: 300 MB → 15 MB">▸ Go-образы: 300 MB → 15 MB</span>
+                            <span data-ru="▸ GitOps-деплой через ArgoCD" data-en="▸ GitOps deployments with ArgoCD">▸ GitOps-деплой через ArgoCD</span>
+                            <span data-ru="▸ AWS: экономия около 30%" data-en="▸ AWS: about 30% cost reduction">▸ AWS: экономия около 30%</span>
+                            <span data-ru="▸ 3 окружения объединены на EKS" data-en="▸ 3 environments unified on EKS">▸ 3 окружения объединены на EKS</span>
+                        </div>
+                        <div class="ops-ticker-set" aria-hidden="true">
+                            <span data-ru="▸ Go-образы: 300 MB → 15 MB" data-en="▸ Go images: 300 MB → 15 MB">▸ Go-образы: 300 MB → 15 MB</span>
+                            <span data-ru="▸ GitOps-деплой через ArgoCD" data-en="▸ GitOps deployments with ArgoCD">▸ GitOps-деплой через ArgoCD</span>
+                            <span data-ru="▸ AWS: экономия около 30%" data-en="▸ AWS: about 30% cost reduction">▸ AWS: экономия около 30%</span>
+                            <span data-ru="▸ 3 окружения объединены на EKS" data-en="▸ 3 environments unified on EKS">▸ 3 окружения объединены на EKS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="Magtym_Ussayev_CV.pdf" id="resume-btn-hero" class="contact-btn resume magnetic" download>
+                    <span class="contact-icon">⬇</span>
+                    <span data-ru="Скачать резюме" data-en="Download resume">Скачать резюме</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div class="stat-card fade-in spotlight achievement">
+            <div class="achievement-icon">🚀</div>
+            <div class="stat-number" data-target="10" data-display="10+">0</div>
+            <div class="stat-label" data-ru="лет опыта в IT" data-en="years in IT">лет опыта в IT</div>
+        </div>
+        <div class="stat-card fade-in spotlight achievement">
+            <div class="achievement-icon">🖥️</div>
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label" data-ru="лет в DevOps" data-en="years in DevOps">лет в DevOps</div>
+        </div>
+        <div class="stat-card fade-in spotlight achievement">
+            <div class="achievement-icon">☁️</div>
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label" data-ru="окружения переведены на EKS" data-en="environments migrated to EKS">окружения переведены на EKS</div>
+        </div>
+        <div class="stat-card fade-in spotlight achievement">
+            <div class="achievement-icon">📉</div>
+            <div class="stat-number" data-target="30" data-display="~30%">0</div>
+            <div class="stat-label" data-ru="снижение расходов AWS" data-en="AWS cost reduction">снижение расходов AWS</div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title" data-ru="Обо мне" data-en="About">Обо мне</h2>
+        <p class="section-subtitle" data-ru="кто_я / about_me" data-en="who_am_i / about_me">кто_я / about_me</p>
+        <div class="about">
+            <div class="about-text fade-in spotlight">
+                <p data-ru="DevOps-инженер с 10+ годами в IT и 6 годами в DevOps. Проектирую и поддерживаю production-инфраструктуру в AWS и Kubernetes, внедряю GitOps и CI/CD, автоматизирую управление секретами и уделяю внимание надёжности, безопасности и стоимости платформы. Работал с инфраструктурой blockchain/Web3 и AI-powered SaaS; открыт к удалённым проектам и долгосрочному сотрудничеству."
+                   data-en="DevOps Engineer with 10+ years in IT and 6 years in DevOps. I build and operate production infrastructure on AWS and Kubernetes, implement GitOps and CI/CD, automate secrets management, and focus on platform reliability, security, and cost efficiency. My experience includes blockchain/Web3 and AI-powered SaaS; open to remote roles and long-term collaboration.">DevOps-инженер с 10+ годами в IT и 6 годами в DevOps. Проектирую и поддерживаю production-инфраструктуру в AWS и Kubernetes, внедряю GitOps и CI/CD, автоматизирую управление секретами и уделяю внимание надёжности, безопасности и стоимости платформы. Работал с инфраструктурой blockchain/Web3 и AI-powered SaaS; открыт к удалённым проектам и долгосрочному сотрудничеству.</p>
+            </div>
+            <div class="pillars">
+                <div class="pillar fade-in spotlight">
+                    <div class="pillar-icon-badge"><span class="pillar-icon">🛡️</span></div>
+                    <div class="pillar-title" data-ru="Надёжность" data-en="Reliability">Надёжность</div>
+                    <div class="pillar-desc" data-ru="Проектирую инфраструктуру так, чтобы инциденты решались быстро, а не повторялись" data-en="I design infrastructure so incidents get resolved fast — and do not repeat">Проектирую инфраструктуру так, чтобы инциденты решались быстро, а не повторялись</div>
+                </div>
+                <div class="pillar fade-in spotlight">
+                    <div class="pillar-icon-badge"><span class="pillar-icon">⚡</span></div>
+                    <div class="pillar-title" data-ru="Скорость" data-en="Speed">Скорость</div>
+                    <div class="pillar-desc" data-ru="Выстраиваю CI/CD и автоматизацию, которые сокращают time-to-market" data-en="I build CI/CD and automation that cut time-to-market">Выстраиваю CI/CD и автоматизацию, которые сокращают time-to-market</div>
+                </div>
+                <!-- <div class="pillar fade-in spotlight">
+                    <div class="pillar-icon-badge"><span class="pillar-icon">👥</span></div>
+                    <div class="pillar-title" data-ru="Люди" data-en="People">Люди</div>
+                    <div class="pillar-desc" data-ru="Нанимаю, обучаю и выращиваю сильные DevOps команды" data-en="I hire, train, and grow strong DevOps teams">Нанимаю, обучаю и выращиваю сильные DevOps команды</div>
+                </div> -->
+                <div class="pillar fade-in spotlight">
+                    <div class="pillar-icon-badge"><span class="pillar-icon">🔒</span></div>
+                    <div class="pillar-title" data-ru="Безопасность" data-en="Security">Безопасность</div>
+                    <div class="pillar-desc" data-ru="Внедряю DevSecOps как часть процесса, а не отдельный этап" data-en="I build DevSecOps into the process, not as a bolt-on step">Внедряю DevSecOps как часть процесса, а не отдельный этап</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2 class="section-title" data-ru="Опыт работы" data-en="Work Experience">Опыт работы</h2>
+        <p class="section-subtitle" data-ru="журнал_опыта — нажмите на запись, чтобы раскрыть подробности" data-en="experience_log — click an entry to expand">журнал_опыта — нажмите на запись, чтобы раскрыть подробности</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="2025 — настоящее время" data-en="2025 — Present">2025 — настоящее время</div>
+                    <div class="timeline-role">DevOps Engineer</div>
+                    <div class="timeline-company" data-ru="Videfy (LivesPro) — AI-powered video generation SaaS" data-en="Videfy (LivesPro) — AI-powered video generation SaaS">Videfy (LivesPro) — AI-powered video generation SaaS</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Перевёл staging и production с ECS, а dev — с bare metal на EKS, унифицировав платформу для всех трёх окружений" data-en="Migrated staging and production from ECS, and dev from bare metal, to EKS, unifying the platform across all three environments">Перевёл staging и production с ECS, а dev — с bare metal на EKS, унифицировав платформу для всех трёх окружений</li>
+                            <li data-ru="Перестроил CI/CD и GitOps-пайплайны под единые EKS-окружения, заменив разрозненные ручные процессы деплоя" data-en="Reworked CI/CD and GitOps pipelines for the unified EKS environments, replacing fragmented manual deployment processes">Перестроил CI/CD и GitOps-пайплайны под единые EKS-окружения, заменив разрозненные ручные процессы деплоя</li>
+                            <li data-ru="Перевёл env-конфигурацию с inline-секретов на ExternalSecrets и ConfigMaps в Helm-чартах, чтобы разработчики управляли переменными через PR" data-en="Moved environment configuration from inline secrets to chart-managed ExternalSecrets and ConfigMaps, enabling developers to manage variables through PRs">Перевёл env-конфигурацию с inline-секретов на ExternalSecrets и ConfigMaps в Helm-чартах, чтобы разработчики управляли переменными через PR</li>
+                            <li data-ru="Рефакторил Helm-чарты и структуру ArgoCD Application, чтобы унифицировать backend, workers и token-balancer в production-safe GitOps-пайплайны" data-en="Refactored Helm charts and ArgoCD Application layout to unify backend, workers, and token-balancer into production-safe GitOps pipelines">Рефакторил Helm-чарты и структуру ArgoCD Application, чтобы унифицировать backend, workers и token-balancer в production-safe GitOps-пайплайны</li>
+                            <li data-ru="Интегрировал External Secrets Operator с AWS Secrets Manager; настроил IRSA для staging/prod и автоматическую синхронизацию ротации секретов" data-en="Integrated External Secrets Operator with AWS Secrets Manager; configured IRSA for staging/prod and automated secret-rotation sync">Интегрировал External Secrets Operator с AWS Secrets Manager; настроил IRSA для staging/prod и автоматическую синхронизацию ротации секретов</li>
+                            <li data-ru="Настроил multi-layer routing через Gateway API, Traefik, AWS ALB и CloudFront с TLS termination на ALB" data-en="Configured multi-layer routing via Gateway API, Traefik, AWS ALB, and CloudFront with TLS termination at ALB">Настроил multi-layer routing через Gateway API, Traefik, AWS ALB и CloudFront с TLS termination на ALB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="2020 — 2025" data-en="2020 — 2025">2020 — 2025</div>
+                    <div class="timeline-role">DevOps Engineer</div>
+                    <div class="timeline-company" data-ru="Nodigy (Blockchain / Web3)" data-en="Nodigy (Blockchain / Web3)">Nodigy (Blockchain / Web3)</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Развивал production-инфраструктуру и full nodes/RPC endpoints нескольких blockchain-сетей в multi-region AWS EKS" data-en="Built and operated production infrastructure, full nodes, and RPC endpoints for multiple blockchain networks on multi-region AWS EKS">Развивал production-инфраструктуру и full nodes/RPC endpoints нескольких blockchain-сетей в multi-region AWS EKS</li>
+                            <li data-ru="Мигрировал legacy manual deployments в полный GitOps-процесс на ArgoCD, автоматизируя lifecycle microservices и smart contract releases" data-en="Migrated legacy manual deployments into a full GitOps workflow with ArgoCD, automating the lifecycle of microservices and smart contract releases">Мигрировал legacy manual deployments в полный GitOps-процесс на ArgoCD, автоматизируя lifecycle microservices и smart contract releases</li>
+                            <li data-ru="Сократил размер Docker-образов с 300MB+ до 15MB по всей линейке Go-сервисов через multi-stage builds и distroless base images" data-en="Reduced Docker image size from 300MB+ to 15MB across all Go services using multi-stage builds and distroless base images">Сократил размер Docker-образов с 300MB+ до 15MB по всей линейке Go-сервисов через multi-stage builds и distroless base images</li>
+                            <li data-ru="Сэкономил около 30% AWS-расходов за счёт Spot-экземпляров, Karpenter-based autoscaling и точной настройки ресурсов" data-en="Reduced AWS infrastructure spend by about 30% through Spot instances, Karpenter-based autoscaling, and fine-tuned resource allocation">Сэкономил около 30% AWS-расходов за счёт Spot-экземпляров, Karpenter-based autoscaling и точной настройки ресурсов</li>
+                            <li data-ru="Обеспечил 99.9% uptime через multi-AZ deployment, failover по health checks и алертинг в Prometheus/Grafana" data-en="Achieved 99.9% uptime with multi-AZ deployments, health-check-driven failover, and Prometheus/Grafana alerting">Обеспечил 99.9% uptime через multi-AZ deployment, failover по health checks и алертинг в Prometheus/Grafana</li>
+                            <li data-ru="Защитил validator private keys через HashiCorp Vault и API через mTLS; автоматизировал PostgreSQL/RDS и blockchain snapshots в S3 с RPO менее часа" data-en="Secured validator private keys with HashiCorp Vault and APIs with mTLS; automated PostgreSQL/RDS and blockchain snapshot backups to S3 with an RPO under one hour">Защитил validator private keys через HashiCorp Vault и API через mTLS; автоматизировал PostgreSQL/RDS и blockchain snapshots в S3 с RPO менее часа</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="2016 — 2020" data-en="2016 — 2020">2016 — 2020</div>
+                    <div class="timeline-role">System Administrator</div>
+                    <div class="timeline-company" data-ru="Telecom (regional telecom provider)" data-en="Telecom (regional telecom provider)">Telecom (regional telecom provider)</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Поддерживал высоконагруженную Linux/FreeBSD/Windows инфраструктуру критически важных сервисов с круглосуточным режимом работы" data-en="Maintained high-load Linux/FreeBSD/Windows server infrastructure for critical business services with 24/7 operations">Поддерживал высоконагруженную Linux/FreeBSD/Windows инфраструктуру критически важных сервисов с круглосуточным режимом работы</li>
+                            <li data-ru="Проектировал и эксплуатировал виртуализационные кластеры на Proxmox и VMware ESXi с HA failover, минимизируя простои при сбоях железа" data-en="Designed and operated virtualization clusters on Proxmox and VMware ESXi with HA failover, minimizing downtime during hardware failures">Проектировал и эксплуатировал виртуализационные кластеры на Proxmox и VMware ESXi с HA failover, минимизируя простои при сбоях железа</li>
+                            <li data-ru="Построил мониторинг на Zabbix + Graylog с алертингом и скорректировал процессы реагирования на инциденты" data-en="Built Zabbix + Graylog monitoring with proactive alerting and improved incident response procedures">Построил мониторинг на Zabbix + Graylog с алертингом и скорректировал процессы реагирования на инциденты</li>
+                            <li data-ru="Настраивал сетевое оборудование Cisco / Juniper / HP: VLAN, OSPF/BGP, firewall policies, маршрутизация и сегментация" data-en="Configured Cisco / Juniper / HP networking equipment: VLANs, OSPF/BGP routing, firewall policies, and network segmentation">Настраивал сетевое оборудование Cisco / Juniper / HP: VLAN, OSPF/BGP, firewall policies, маршрутизация и сегментация</li>
+                            <li data-ru="Реализовал многоуровневую стратегию резервного копирования и DR, обеспечив целостность данных и быстрый откат после аварий" data-en="Implemented a multi-tier backup and disaster recovery strategy to ensure data integrity and rapid restoration after incidents">Реализовал многоуровневую стратегию резервного копирования и DR, обеспечив целостность данных и быстрый откат после аварий</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="мар 2016 — фев 2017" data-en="Mar 2016 — Feb 2017">мар 2016 — фев 2017</div>
+                    <div class="timeline-role" data-ru="Основатель (CEO & CIO)" data-en="Owner (CEO & CIO)">Основатель (CEO & CIO)</div>
+                    <div class="timeline-company" data-ru="IThelperSPb, собственный проект, СПб" data-en="IThelperSPb, own venture, Saint Petersburg">IThelperSPb, собственный проект, СПб</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Облачные решения на Microsoft Azure для частных компаний" data-en="Delivered cloud IT solutions on Microsoft Azure for private companies">Облачные решения на Microsoft Azure для частных компаний</li>
+                            <li data-ru="Внедрял ITSM/ITIL-процессы: управление заявками и инцидентами, конфигурациями, лицензиями; автоматизированная инвентаризация серверов и рабочих станций" data-en="Implemented ITSM/ITIL processes: ticket and incident management, configuration and license management; automated inventory of servers and workstations">Внедрял ITSM/ITIL-процессы: управление заявками и инцидентами, конфигурациями, лицензиями; автоматизированная инвентаризация серверов и рабочих станций</li>
+                            <li data-ru="Разрабатывал сайты, интернет-магазины, корпоративные порталы и CRM" data-en="Built websites, online stores, corporate portals, and CRM systems">Разрабатывал сайты, интернет-магазины, корпоративные порталы и CRM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="дек 2014 — мар 2016" data-en="Dec 2014 — Mar 2016">дек 2014 — мар 2016</div>
+                    <div class="timeline-role" data-ru="Ст. специалист по системному администрированию" data-en="Head of System Administration">Ст. специалист по системному администрированию</div>
+                    <div class="timeline-company" data-ru="Объединённая Вагонная Компания, Москва" data-en="United Wagon Company, Moscow">Объединённая Вагонная Компания, Москва</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Реструктурировал Active Directory, настроил дополнительные базы MS Exchange" data-en="Restructured Active Directory; configured additional MS Exchange databases">Реструктурировал Active Directory, настроил дополнительные базы MS Exchange</li>
+                            <li data-ru="Внедрил виртуализацию VMware ESXi, развернул GLPI (ITSM: заявки, инциденты, лицензии, инвентаризация), мониторинг Nagios/Cacti/Zabbix" data-en="Implemented VMware ESXi virtualization; deployed GLPI (ITSM: tickets, incidents, licenses, inventory); monitoring on Nagios/Cacti/Zabbix">Внедрил виртуализацию VMware ESXi, развернул GLPI (ITSM: заявки, инциденты, лицензии, инвентаризация), мониторинг Nagios/Cacti/Zabbix</li>
+                            <li data-ru="Запустил корпоративный портал ONLYOFFICE и ERP-систему Odoo" data-en="Launched an ONLYOFFICE corporate portal and Odoo ERP system">Запустил корпоративный портал ONLYOFFICE и ERP-систему Odoo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="янв 2012 — дек 2014" data-en="Jan 2012 — Dec 2014">янв 2012 — дек 2014</div>
+                    <div class="timeline-role" data-ru="Сооснователь (CEO & CIO)" data-en="Co-owner (CEO & CIO)">Сооснователь (CEO & CIO)</div>
+                    <div class="timeline-company" data-ru="ООО «Микрозаймфинанс», Москва" data-en="Mikrozaymfinans LLC, Moscow">ООО «Микрозаймфинанс», Москва</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Построил бизнес с нуля — от регистрации юрлица до полного запуска операционной деятельности" data-en="Built the business from the ground up, from registration to full operational launch">Построил бизнес с нуля — от регистрации юрлица до полного запуска операционной деятельности</li>
+                            <li data-ru="Разработал сайт с онлайн-заявками и калькулятором, настроил SEO-продвижение" data-en="Built the company website with an online application flow and calculator; SEO">Разработал сайт с онлайн-заявками и калькулятором, настроил SEO-продвижение</li>
+                            <li data-ru="Внедрил CRM, выстроил IT-инфраструктуру (хостинг, СУБД, почта)" data-en="Implemented a CRM system; built out IT infrastructure (hosting, databases, email)">Внедрил CRM, выстроил IT-инфраструктуру (хостинг, СУБД, почта)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="янв 2011 — дек 2011" data-en="Jan 2011 — Dec 2011">янв 2011 — дек 2011</div>
+                    <div class="timeline-role" data-ru="Главный системный администратор" data-en="Head of System Administrator">Главный системный администратор</div>
+                    <div class="timeline-company" data-ru="Т-Банк (Тинькофф), Москва" data-en="T-Bank (Tinkoff), Moscow">Т-Банк (Тинькофф), Москва</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Системное администрирование IT-инфраструктуры на Windows/Linux" data-en="Owned systems administration of the Windows/Linux IT infrastructure">Системное администрирование IT-инфраструктуры на Windows/Linux</li>
+                            <li data-ru="Внедрял системы мониторинга и оповещения о сбоях" data-en="Implemented monitoring and alerting systems for outage detection">Внедрял системы мониторинга и оповещения о сбоях</li>
+                            <li data-ru="Масштаб: >250 серверов, >1200 пользователей, 4 ЦОД, команда 6 человек" data-en="Scale: 250+ servers, 1,200+ users, 4 data centers, team of 6">Масштаб: >250 серверов, >1200 пользователей, 4 ЦОД, команда 6 человек</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content spotlight" onclick="toggleDetails(this)">
+                    <div class="timeline-date" data-ru="фев 2008 — янв 2011" data-en="Feb 2008 — Jan 2011">фев 2008 — янв 2011</div>
+                    <div class="timeline-role" data-ru="Заместитель директора департамента ИТ" data-en="Deputy CIO">Заместитель директора департамента ИТ</div>
+                    <div class="timeline-company" data-ru="ЛЕКСПРО, ООО, Москва" data-en="LEXPRO LLC, Moscow">ЛЕКСПРО, ООО, Москва</div>
+                    <div class="expand-hint" data-ru="▸ Нажмите, чтобы раскрыть" data-en="▸ Click to expand">▸ Нажмите, чтобы раскрыть</div>
+                    <div class="timeline-details">
+                        <ul>
+                            <li data-ru="Построил IT-инфраструктуру нового офиса (~50 ПК) с нуля" data-en="Built a new office's IT infrastructure from scratch (~50 PCs)">Построил IT-инфраструктуру нового офиса (~50 ПК) с нуля</li>
+                            <li data-ru="Внедрил виртуализацию MS Hyper-V, СХД и автоматизированное резервное копирование" data-en="Implemented MS Hyper-V virtualization, storage, and automated backups">Внедрил виртуализацию MS Hyper-V, СХД и автоматизированное резервное копирование</li>
+                            <li data-ru="Масштаб: 40 серверов, ~500 пользователей, 6 офисов, команда ~12 человек" data-en="Scale: 40 servers, ~500 users, 6 offices, team of ~12">Масштаб: 40 серверов, ~500 пользователей, 6 офисов, команда ~12 человек</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title" data-ru="Навыки и инструменты" data-en="Skills & Tools">Навыки и инструменты</h2>
+        <p class="section-subtitle" data-ru="стек_навыков / skills_stack" data-en="skills_stack / skills_stack">стек_навыков / skills_stack</p>
+        <div class="skills-grid">
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🚀</span> <span data-ru="Оркестрация" data-en="Orchestration">Оркестрация</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Оркестрация контейнеров в кластере" data-tip-en="Container orchestration at scale">Kubernetes</span>
+                    <span class="skill-item" data-tip-ru="Kubernetes-платформа Red Hat для enterprise" data-tip-en="Red Hat's enterprise Kubernetes platform">OpenShift</span>
+                    <span class="skill-item" data-tip-ru="Контейнеризация приложений" data-tip-en="Application containerization">Docker</span>
+                    <span class="skill-item" data-tip-ru="Пакетный менеджер для Kubernetes" data-tip-en="Package manager for Kubernetes">Helm</span>
+                    <span class="skill-item" data-tip-ru="Развёртывание кластеров Kubernetes через Ansible" data-tip-en="Deploy Kubernetes clusters via Ansible">Kubespray</span>
+                    <span class="skill-item" data-tip-ru="Автомасштабирование узлов Kubernetes" data-tip-en="Kubernetes node autoscaling">Karpenter</span>
+                    <span class="skill-item" data-tip-ru="Ingress-контроллер и сетевой proxy" data-tip-en="Ingress controller and network proxy">Traefik</span>
+                    <span class="skill-item" data-tip-ru="Маршрутизация трафика в Kubernetes" data-tip-en="Kubernetes traffic routing">Gateway API</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">☁️</span> <span data-ru="Облака" data-en="Cloud">Облака</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Облачная платформа Amazon" data-tip-en="Amazon's cloud platform">AWS</span>
+                    <span class="skill-item" data-tip-ru="Облачная платформа Google" data-tip-en="Google's cloud platform">GCP</span>
+                    <span class="skill-item" data-tip-ru="Управляемый Kubernetes в AWS" data-tip-en="Managed Kubernetes on AWS">Amazon EKS</span>
+                    <span class="skill-item" data-tip-ru="Хранилище объектов AWS" data-tip-en="AWS object storage">Amazon S3</span>
+                    <span class="skill-item" data-tip-ru="Вычислительные мощности AWS" data-tip-en="AWS compute service">Amazon EC2</span>
+                    <span class="skill-item" data-tip-ru="Управляемые реляционные базы AWS" data-tip-en="Managed relational databases on AWS">RDS / Aurora</span>
+                    <span class="skill-item" data-tip-ru="Управляемый Redis и Memcached в AWS" data-tip-en="Managed Redis and Memcached on AWS">ElastiCache</span>
+                    <span class="skill-item" data-tip-ru="DNS-сервис AWS" data-tip-en="AWS DNS service">Route 53</span>
+                    <span class="skill-item" data-tip-ru="CDN-сервис AWS" data-tip-en="AWS content delivery network">CloudFront</span>
+                    <span class="skill-item" data-tip-ru="Управление секретами в AWS" data-tip-en="AWS secrets management">Secrets Manager</span>
+                    <span class="skill-item" data-tip-ru="Управляемая очередь сообщений AWS" data-tip-en="Managed message queue on AWS">Amazon SQS</span>
+                    <span class="skill-item" data-tip-ru="Управление TLS-сертификатами AWS" data-tip-en="AWS TLS certificate management">AWS Certificate Manager</span>
+                    <span class="skill-item" data-tip-ru="Балансировщик нагрузки AWS" data-tip-en="AWS load balancer">Application Load Balancer</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🖥️</span> <span data-ru="VPS / Bare metal" data-en="VPS / Bare metal">VPS / Bare metal</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Немецкий провайдер VPS и серверов" data-tip-en="German VPS & server provider">Hetzner</span>
+                    <span class="skill-item" data-tip-ru="Облачный провайдер для разработчиков" data-tip-en="Developer-friendly cloud provider">DigitalOcean</span>
+                    <span class="skill-item" data-tip-ru="Европейский хостинг-провайдер" data-tip-en="European hosting provider">OVH</span>
+                    <span class="skill-item" data-tip-ru="Облачный провайдер" data-tip-en="Cloud provider">Selectel</span>
+                    <span class="skill-item" data-tip-ru="Физические серверы по запросу" data-tip-en="On-demand physical servers">Bare Metal SaaS</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">📦</span> <span data-ru="Виртуализация" data-en="Virtualization">Виртуализация</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Гипервизор для виртуализации серверов" data-tip-en="Server virtualization hypervisor">VMware ESXi</span>
+                    <span class="skill-item" data-tip-ru="Гипервизор виртуализации от Microsoft" data-tip-en="Microsoft's virtualization hypervisor">Microsoft Hyper-V</span>
+                    <span class="skill-item" data-tip-ru="Виртуализация на базе ядра Linux" data-tip-en="Linux kernel-based virtualization">KVM</span>
+                    <span class="skill-item" data-tip-ru="Open-source платформа виртуализации" data-tip-en="Open-source virtualization platform">Proxmox</span>
+                    <span class="skill-item" data-tip-ru="Контейнерная виртуализация на Linux" data-tip-en="Linux container-based virtualization">OpenVZ</span>
+                    <span class="skill-item" data-tip-ru="Системные контейнеры Linux" data-tip-en="Linux system containers">LXD / LXC</span>
+                    <span class="skill-item" data-tip-ru="Управление воспроизводимыми dev-окружениями" data-tip-en="Reproducible dev environments">Vagrant</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">💻</span> <span data-ru="Операционные системы" data-en="Operating Systems">Операционные системы</span></div>
+                <div class="skill-items">
+                    <span class="skill-item">Linux (Debian, CentOS, Ubuntu)</span>
+                    <span class="skill-item">FreeBSD</span>
+                    <span class="skill-item">Windows Server</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">⚙️</span> <span>CI / CD</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="CI/CD, встроенный в GitLab" data-tip-en="CI/CD built into GitLab">GitLab CI</span>
+                    <span class="skill-item" data-tip-ru="CI/CD, встроенный в GitHub" data-tip-en="CI/CD built into GitHub">GitHub Actions</span>
+                    <span class="skill-item" data-tip-ru="GitOps-доставка приложений в Kubernetes" data-tip-en="GitOps continuous delivery for Kubernetes">ArgoCD</span>
+                    <span class="skill-item" data-tip-ru="Реестр контейнерных образов" data-tip-en="Container image registry">Harbor</span>
+
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🏗️</span> <span data-ru="Инфраструктура как код" data-en="Infrastructure as Code">Инфраструктура как код</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Декларативное управление облачной инфраструктурой" data-tip-en="Declarative cloud infrastructure management">Terraform</span>
+                    <span class="skill-item" data-tip-ru="Управление конфигурацией и автоматизация" data-tip-en="Configuration management and automation">Ansible</span>
+                    <span class="skill-item" data-tip-ru="Автоматизированное создание dev-окружений" data-tip-en="Automated development environments">Vagrant</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🤖</span> <span data-ru="Автоматизация и скрипты" data-en="Automation & scripting">Автоматизация и скрипты</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Автоматизация конфигураций без агентов" data-tip-en="Agentless configuration automation">Ansible</span>
+                    <span class="skill-item" data-tip-ru="Скриптинг в Linux/Unix" data-tip-en="Linux/Unix shell scripting">Bash</span>
+                    <span class="skill-item" data-tip-ru="Язык для автоматизации и скриптов" data-tip-en="Automation & scripting language">Python</span>
+                    <span class="skill-item" data-tip-ru="Скриптинг и автоматизация в Windows" data-tip-en="Windows scripting & automation">PowerShell</span>
+                    <span class="skill-item" data-tip-ru="Формат конфигураций для IaC" data-tip-en="Config format for IaC">YAML</span>
+                    <span class="skill-item" data-tip-ru="Язык программирования для backend-сервисов" data-tip-en="Programming language for backend services">Go</span>
+                    <span class="skill-item" data-tip-ru="JavaScript runtime для backend-приложений" data-tip-en="JavaScript runtime for backend applications">Node.js</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🔐</span> <span data-ru="Сети и безопасность" data-en="Networking & security">Сети и безопасность</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Файрвол и фильтрация трафика в Linux" data-tip-en="Linux firewall & traffic filtering">iptables / Firewalld</span>
+                    <span class="skill-item" data-tip-ru="Защита от брутфорс-атак" data-tip-en="Brute-force attack protection">Fail2Ban</span>
+                    <span class="skill-item" data-tip-ru="Защищённые VPN-туннели" data-tip-en="Secure VPN tunnels">OpenVPN</span>
+                    <span class="skill-item" data-tip-ru="Каталог пользователей и аутентификация" data-tip-en="Directory & authentication service">LDAP</span>
+                    <span class="skill-item" data-tip-ru="Бесплатные SSL-сертификаты" data-tip-en="Free SSL certificates">Let's Encrypt</span>
+                    <span class="skill-item" data-tip-ru="Каталог пользователей и групп Windows" data-tip-en="Windows user & group directory">Active Directory</span>
+                    <span class="skill-item" data-tip-ru="Управление секретами и ключами" data-tip-en="Secrets and key management">HashiCorp Vault</span>
+                    <span class="skill-item" data-tip-ru="Синхронизация секретов из внешних хранилищ в Kubernetes" data-tip-en="Syncs secrets from external stores into Kubernetes">External Secrets Operator</span>
+                    <span class="skill-item" data-tip-ru="Взаимная TLS-аутентификация" data-tip-en="Mutual TLS authentication">mTLS</span>
+                    <span class="skill-item" data-tip-ru="Защита веб-приложений и API" data-tip-en="Web application and API security">ModSecurity / OWASP</span>
+                    <span class="skill-item" data-tip-ru="Межсетевые экраны нового поколения" data-tip-en="Next-generation firewalls">NGFW</span>
+                    <span class="skill-item" data-tip-ru="Мониторинг событий безопасности и реагирование на инциденты" data-tip-en="Security monitoring and incident response">SIEM / SOC</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">📊</span> <span data-ru="Мониторинг" data-en="Monitoring">Мониторинг</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Сбор метрик и алертинг" data-tip-en="Metrics collection & alerting">Prometheus</span>
+                    <span class="skill-item" data-tip-ru="Дашборды и визуализация метрик" data-tip-en="Dashboards & metrics visualization">Grafana</span>
+                    <span class="skill-item" data-tip-ru="Сбор и анализ логов" data-tip-en="Log collection & analysis">ELK / EFK</span>
+                    <span class="skill-item" data-tip-ru="Мониторинг инфраструктуры" data-tip-en="Infrastructure monitoring">Zabbix</span>
+                    <span class="skill-item" data-tip-ru="Маршрутизация алертов Prometheus" data-tip-en="Routes alerts from Prometheus">Alertmanager</span>
+                    <span class="skill-item" data-tip-ru="Отслеживание ошибок приложений" data-tip-en="Application error monitoring">Sentry</span>
+                    <span class="skill-item" data-tip-ru="Сбор и анализ системных журналов" data-tip-en="Log collection and analysis">Graylog</span>
+
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🌐</span> <span>WEB</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Популярный веб-сервер и обратный proxy" data-tip-en="Popular web server & reverse proxy">NGINX</span>
+                    <span class="skill-item" data-tip-ru="Классический веб-сервер" data-tip-en="Classic web server">Apache</span>
+                    <span class="skill-item" data-tip-ru="Веб-сервер Microsoft для Windows Server" data-tip-en="Microsoft's web server for Windows Server">IIS</span>
+                </div>
+            </div>
+            <div class="skill-category fade-in spotlight">
+                <div class="skill-category-title"><span class="icon">🗄️</span> <span data-ru="Базы данных и брокеры сообщений" data-en="Databases & Messaging">Базы данных и брокеры сообщений</span></div>
+                <div class="skill-items">
+                    <span class="skill-item" data-tip-ru="Реляционная СУБД" data-tip-en="Relational database">PostgreSQL</span>
+                    <span class="skill-item" data-tip-ru="NoSQL СУБД" data-tip-en="NoSQL database">MongoDB</span>
+                    <span class="skill-item" data-tip-ru="In-memory база данных типа key-value" data-tip-en="In-memory key-value database">Redis</span>
+                    <span class="skill-item" data-tip-ru="Реляционные СУБД" data-tip-en="Relational databases">MySQL / MariaDB</span>
+                    <span class="skill-item" data-tip-ru="СУБД от Microsoft" data-tip-en="Microsoft's database engine">MS SQL</span>
+                    <span class="skill-item" data-tip-ru="Потоковая передача событий" data-tip-en="Event streaming platform">Kafka</span>
+                    <span class="skill-item" data-tip-ru="Брокер сообщений" data-tip-en="Message broker">RabbitMQ</span>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title" data-ru="Контакты" data-en="Contact">Контакты</h2>
+        <p class="section-subtitle" data-ru="контакты / contact" data-en="contacts / contact">контакты / contact</p>
+        <a class="contact-email-line" href="mailto:ussaev6@gmail.com">ussaev6@gmail.com</a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ussaev" class="social-icon linkedin-icon magnetic" target="_blank" rel="noopener" aria-label="LinkedIn" data-tip-ru="Связаться со мной в LinkedIn" data-tip-en="Connect with me on LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM3.556 20.452h3.564V9H3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://t.me/topdev17" class="social-icon telegram-icon magnetic" target="_blank" rel="noopener" aria-label="Telegram" data-tip-ru="Написать мне в Telegram" data-tip-en="Message me on Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.18 1.897-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.79-.417-1.225.258-1.932.177-.185 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212-.07-.062-.174-.041-.249-.024-.106.024-1.793 1.14-5.062 3.345-.479.329-.913.489-1.302.48-.428-.009-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.362 4.025-1.598 4.476-1.606.099-.002.321.023.465.14.12.1.153.235.166.335.014.104.024.294.006.51z"/></svg>
+            </a>
+            <a href="https://github.com/ussaevm" class="social-icon magnetic" target="_blank" rel="noopener" aria-label="GitHub" data-tip-ru="Мой GitHub" data-tip-en="My GitHub">GH</a>
+            <a href="mailto:ussaev6@gmail.com" class="social-icon email-icon magnetic" aria-label="Email" data-tip-ru="Отправить мне письмо" data-tip-en="Send me an email">@</a>
+        </div>
+        <div class="contacts">
+            <p class="contact-tagline" data-ru="Открыт к интересным проектам и долгосрочному сотрудничеству!" data-en="Open to interesting projects and long-term collaboration!">Открыт к интересным проектам и долгосрочному сотрудничеству!</p>
+            <div class="contact-buttons">
+                <a href="Magtym_Ussayev_CV.pdf" id="resume-btn" class="contact-btn resume magnetic" download>
+                    <span class="contact-icon">⬇</span>
+                    <span id="resume-btn-text" data-ru="Скачать резюме" data-en="Download resume">Скачать резюме</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-status">
+            <span class="footer-tags">#DevOps #DevSecOps #SRE</span>
+        </p>
+        <p style="margin-top:0.5rem; font-size:0.7rem; color:#ffffff;" data-ru="© 2026 Магтым Уссаев" data-en="© 2026 Magtym Ussayev">© 2026 Магтым Уссаев</p>
+        <p style="margin-top:0.8rem; font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--text-muted);" id="visitor-count-line"></p>
+    </footer>
+
+    <script>
+        // ========== PARTICLES ==========
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let mouseX = 0, mouseY = 0;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.size = Math.random() * 2 + 0.5;
+                this.opacity = Math.random() * 0.5 + 0.1;
+            }
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                const dx = mouseX - this.x;
+                const dy = mouseY - this.y;
+                const dist = Math.sqrt(dx*dx + dy*dy);
+                if (dist < 150) {
+                    this.vx -= dx * 0.0005;
+                    this.vy -= dy * 0.0005;
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        function particleCountFor(w, h) {
+            return Math.min(380, Math.max(90, Math.floor((w * h) / 5500)));
+        }
+        for (let i = 0; i < particleCountFor(canvas.width, canvas.height); i++) particles.push(new Particle());
+        window.addEventListener('resize', () => {
+            const target = particleCountFor(canvas.width, canvas.height);
+            if (particles.length < target) {
+                while (particles.length < target) particles.push(new Particle());
+            } else if (particles.length > target) {
+                particles.length = target;
+            }
+        });
+
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx*dx + dy*dy);
+                    if (dist < 170) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(0, 212, 255, ${0.1 * (1 - dist/170)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            drawConnections();
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        window.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+
+        // ========== SCROLL PROGRESS ==========
+        const scrollProgress = document.getElementById('scroll-progress');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            scrollProgress.style.width = (scrolled * 100) + '%';
+        });
+
+        // ========== HEADER SCROLL ==========
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+
+        const navToggle = document.querySelector('.nav-toggle');
+        const primaryNavigation = document.getElementById('primary-navigation');
+        function closeNavigation() {
+            primaryNavigation.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNavigation.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+        primaryNavigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNavigation));
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && primaryNavigation.classList.contains('open')) {
+                closeNavigation();
+                navToggle.focus();
+            }
+        });
+
+        // ========== INTERSECTION OBSERVER ==========
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.classList.contains('stat-card') && !entry.target.dataset.counted) {
+                        entry.target.dataset.counted = 'true';
+                        const num = entry.target.querySelector('.stat-number');
+                        const target = parseInt(num.dataset.target);
+                        let current = 0;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) { current = target; clearInterval(timer); }
+                            num.textContent = current >= target
+                                ? (num.dataset.display || String(target))
+                                : String(Math.floor(current));
+                        }, 30);
+                    }
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.fade-in, .timeline-item').forEach(el => observer.observe(el));
+
+        // ========== TOGGLE TIMELINE DETAILS ==========
+        function toggleDetails(el) {
+            const details = el.querySelector('.timeline-details');
+            const hint = el.querySelector('.expand-hint');
+            const expanding = !details.classList.contains('expanded');
+            details.classList.toggle('expanded');
+            if (expanding) {
+                details.style.maxHeight = details.scrollHeight + 40 + 'px';
+            } else {
+                details.style.maxHeight = '';
+            }
+            const expanded = expanding;
+            const ruText = expanded ? '▸ Свернуть' : '▸ Нажмите, чтобы раскрыть';
+            const enText = expanded ? '▸ Collapse' : '▸ Click to expand';
+            hint.dataset.ru = ruText;
+            hint.dataset.en = enText;
+            hint.textContent = currentLang === 'en' ? enText : ruText;
+        }
+
+        // ========== LANGUAGE SWITCH ==========
+        let currentLang = 'ru';
+        function setLang(lang, btn) {
+            currentLang = lang;
+            document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            document.querySelectorAll('[data-ru]').forEach(el => {
+                el.textContent = el.dataset[lang];
+            });
+            const resumeBtn = document.getElementById('resume-btn');
+            const resumeBtnHero = document.getElementById('resume-btn-hero');
+            const resumeHref = lang === 'en' ? 'Magtym_Ussayev_CV.pdf' : 'Magtym_Ussayev_CV.pdf';
+            if (resumeBtn) resumeBtn.setAttribute('href', resumeHref);
+            if (resumeBtnHero) resumeBtnHero.setAttribute('href', resumeHref);
+            document.documentElement.setAttribute('lang', lang);
+        }
+
+        // // ========== VISITOR COUNTER (fetch-based) ==========
+        // (function () {
+        //     const lineEl = document.getElementById('visitor-count-line');
+        //     if (!lineEl) return;
+        //     fetch('https://api.countapi.xyz/hit/magtym-devops/site-visits')
+        //         .then((r) => { if (!r.ok) throw new Error('bad response'); return r.json(); })
+        //         .then((data) => {
+        //             if (data && typeof data.value === 'number') {
+        //                 lineEl.textContent = `visitors: ${data.value}`;
+        //             }
+        //         })
+        //         .catch(() => { /* silently do nothing — many browsers/adblockers block this, that's fine */ });
+        // })();
+
+        // ========== HOVER TICK SOUNDS ==========
+        (function () {
+            if (!window.matchMedia('(pointer: fine)').matches) return;
+            let actx = null;
+            function ensureCtx() {
+                if (!actx) {
+                    const AC = window.AudioContext || window.webkitAudioContext;
+                    if (AC) actx = new AC();
+                }
+                if (actx && actx.state === 'suspended') actx.resume();
+            }
+            window.addEventListener('pointerdown', ensureCtx, { once: true });
+
+            function tick() {
+                if (!actx) return;
+                const t0 = actx.currentTime;
+                const osc = actx.createOscillator();
+                const gain = actx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(1400, t0);
+                osc.frequency.exponentialRampToValueAtTime(900, t0 + 0.035);
+                gain.gain.setValueAtTime(0, t0);
+                gain.gain.linearRampToValueAtTime(0.035, t0 + 0.004);
+                gain.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.05);
+                osc.connect(gain).connect(actx.destination);
+                osc.start(t0);
+                osc.stop(t0 + 0.06);
+            }
+
+            let lastTick = 0;
+            document.querySelectorAll('.spotlight, .social-icon, .contact-btn, .skill-item').forEach((el) => {
+                el.addEventListener('mouseenter', () => {
+                    const now = performance.now();
+                    if (now - lastTick < 40) return; // debounce rapid re-triggers
+                    lastTick = now;
+                    tick();
+                });
+            });
+        })();
+
+        // ========== SPOTLIGHT CARDS ==========
+        (function () {
+            if (!window.matchMedia('(pointer: fine)').matches) return;
+            document.querySelectorAll('.spotlight').forEach((el) => {
+                el.addEventListener('mousemove', (e) => {
+                    const rect = el.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    el.style.setProperty('--sx', x + '%');
+                    el.style.setProperty('--sy', y + '%');
+                });
+            });
+        })();
+
+        // ========== MAGNETIC BUTTONS ==========
+        (function () {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            if (!window.matchMedia('(pointer: fine)').matches) return; // skip on touch devices
+            document.querySelectorAll('.magnetic').forEach((el) => {
+                const strength = el.classList.contains('resume') ? 0.18 : 0.3;
+                el.addEventListener('mousemove', (e) => {
+                    const rect = el.getBoundingClientRect();
+                    const dx = (e.clientX - rect.left - rect.width / 2) * strength;
+                    const dy = (e.clientY - rect.top - rect.height / 2) * strength;
+                    el.style.transform = `translate(${dx}px, ${dy}px)`;
+                });
+                el.addEventListener('mouseleave', () => {
+                    el.style.transform = '';
+                });
+            });
+        })();
+
+        // ========== SUBTLE CURSOR GLOW ==========
+        (function () {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            if (!window.matchMedia('(pointer: fine)').matches) return; // skip on touch devices
+            const glow = document.createElement('div');
+            glow.id = 'cursor-glow';
+            document.body.appendChild(glow);
+            let gx = 0, gy = 0, tx = 0, ty = 0;
+            window.addEventListener('mousemove', (e) => { tx = e.clientX; ty = e.clientY; });
+            function raf() {
+                gx += (tx - gx) * 0.12;
+                gy += (ty - gy) * 0.12;
+                glow.style.transform = `translate(${gx}px, ${gy}px)`;
+                requestAnimationFrame(raf);
+            }
+            raf();
+        })();
+    </script>
+</body>
+</html>
