@@ -400,6 +400,34 @@
         .timeline-tag { font-size: 0.7rem; padding: 0.2rem 0.6rem; background: rgba(0,212,255,0.1); border: 1px solid rgba(0,212,255,0.2); border-radius: 4px; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; }
         .expand-hint { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic; }
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .cert-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.3rem;
+            max-width: 980px; margin: 0 auto;
+        }
+        .cert-card-link {
+            display: block; text-decoration: none; color: inherit;
+        }
+        .cert-card {
+            background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+            backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+            border: 1px solid rgba(255,255,255,0.09); border-radius: 18px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 8px 32px rgba(0,0,0,0.3);
+            padding: 1.5rem 1.25rem; text-align: center; transition: all 0.4s ease; position: relative; overflow: hidden;
+            height: 100%;
+        }
+        .cert-card:hover { border-color: var(--accent-cyan); transform: translateY(-6px); box-shadow: 0 14px 36px rgba(0,212,255,0.12); }
+        .cert-card::before {
+            content: ''; position: absolute; inset: 0 auto auto 0; width: 100%; height: 3px;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
+        }
+        .cert-badge {
+            width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1rem; border-radius: 50%; background: rgba(0,212,255,0.08);
+            border: 1px solid rgba(0,212,255,0.2); font-size: 1.3rem;
+        }
+        .cert-name { font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.35rem; line-height: 1.4; }
+        .cert-meta { font-size: 0.74rem; color: var(--text-secondary); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.04em; }
+        .cert-link-hint { display: inline-block; margin-top: 0.75rem; color: var(--accent-cyan); font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; }
         .skill-category {
             background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
             backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
@@ -598,6 +626,7 @@
             <a href="#about" data-ru="Обо мне" data-en="About">Обо мне</a>
             <a href="#experience" data-ru="Опыт" data-en="Experience">Опыт</a>
             <a href="#skills" data-ru="Навыки" data-en="Skills">Навыки</a>
+            <a href="#certificates" data-ru="Сертификаты" data-en="Certificates">Сертификаты</a>
             <a href="#contact" data-ru="Контакты" data-en="Contact">Контакты</a>
         </nav>
         <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" data-ru="Меню" data-en="Menu">Меню</button>
@@ -1023,6 +1052,30 @@
                     <span class="skill-item" data-tip-ru="Брокер сообщений" data-tip-en="Message broker">RabbitMQ</span>
                 </div>
             </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+        <h2 class="section-title" data-ru="Сертификаты и квалификации" data-en="Certifications & Qualifications">Сертификаты и квалификации</h2>
+        <p class="section-subtitle" data-ru="network security / soc / information security" data-en="network security / soc / information security">network security / soc / information security</p>
+        <div class="cert-grid">
+            <a href="PCNSA.png" target="_blank" rel="noopener" class="cert-card-link" aria-label="View PCNSA certificate">
+                <div class="cert-card fade-in spotlight">
+                    <div class="cert-badge">🔐</div>
+                    <div class="cert-name">PCNSA</div>
+                    <div class="cert-meta">Palo Alto Networks Certified Network Security Administrator</div>
+                    <span class="cert-link-hint" data-ru="↗ Посмотреть сертификат" data-en="↗ View certificate">↗ Посмотреть сертификат</span>
+                </div>
+            </a>
+            <a href="Positive_Technologies_SOC2.png" target="_blank" rel="noopener" class="cert-card-link" aria-label="View Positive Technologies SOC certificate">
+                <div class="cert-card fade-in spotlight">
+                    <div class="cert-badge">🛡️</div>
+                    <div class="cert-name">SOC Certification</div>
+                    <div class="cert-meta">Positive Technologies</div>
+                    <span class="cert-link-hint" data-ru="↗ Посмотреть сертификат" data-en="↗ View certificate">↗ Посмотреть сертификат</span>
+                </div>
+            </a>
+        </div>
     </section>
 
     <!-- Contact -->
